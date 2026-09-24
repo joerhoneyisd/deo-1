@@ -260,7 +260,7 @@ nav > a:hover,
 /* hero */
 .hero {
   background: var(--wash);
-  padding: 132px 0;
+  padding: 10vw 0;
   overflow: hidden;
   position: relative;
 }
