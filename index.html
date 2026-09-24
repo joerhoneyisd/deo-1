@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Department of Economic Opportunity | County of Los Angeles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bar" id="top">
+      <div class="w">
+        <a
+          class="logo"
+          href="#top"
+          aria-label="Department of Economic Opportunity, home"
+          ><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#1bc0aa" />
+                <stop offset="1" stop-color="#0f3f63" />
+              </linearGradient>
+            </defs>
+            <rect width="34" height="34" rx="10" fill="url(#g)" />
+            <path
+              d="M8 25v-5M14 25v-9M20 25v-13M26 25V8"
+              stroke="#fff"
+              stroke-width="3.2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <b>DEO</b><small>Department of<br />Economic Opportunity</small>
+        </a>
+        <button class="menu" aria-label="Menu" aria-expanded="false" id="mb">
+          ☰
+        </button>
+        <nav id="nav" aria-label="Main"></nav>
+        <div class="tools">
+          <input type="search" placeholder="Search" aria-label="Search" /><a
+            class="btn"
+            href="#contact"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <video
+          class="hero-bg"
+          data-autoplay=""
+          loop="loop"
+          muted="muted"
+          autoplay="autoplay"
+          preload="auto"
+          aria-hidden="true"
+          tabindex="-1"
+          style="width: 2327.11px; height: 1309px"
+        >
+          <source
+            src="https://opportunity-dev.wppro.lacounty.gov/wp-content/uploads/2025/08/freecompress-DEO-Web-Reel.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="w">
+          <div>
+            <h1>Stronger economy for a brighter LA.</h1>
+            <p>
+              We strive for a more equitable economy with thriving local
+              communities, inclusive and sustainable growth, and opportunity and
+              mobility for all.
+            </p>
+            <div class="paths" id="paths"></div>
+          </div>
+          <div class="col hero-images">
+            <div
+              class="ph a p-capdev"
+              role="img"
+              aria-label="Capital development site at dusk"
+            ></div>
+            <div
+              class="ph p-sidewalk"
+              role="img"
+              aria-label="Sidewalk vending"
+            ></div>
+            <div
+              class="ph c p-youth"
+              role="img"
+              aria-label="Youth@Work event"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="help">
+        <div class="w">
+          <div class="hd"><h2>How We Help</h2></div>
+          <div class="tabs" role="tablist" id="tabs"></div>
+          <div class="grid" id="panel" role="tabpanel"></div>
+        </div>
+      </section>
+
+      <section class="init" id="initiatives">
+        <div class="w">
+          <div class="hd"><h2>Key Initiatives</h2></div>
+          <div class="grid" id="init"></div>
+        </div>
+      </section>
+
+      <section class="news" id="news">
+        <div class="w">
+          <div class="hd">
+            <h2>DEO News and Announcements</h2>
+            <p class="more">
+              <a class="btn" href="#">Read More DEO News And Announcements</a>
+            </p>
+          </div>
+          <div id="list"></div>
+        </div>
+      </section>
+
+      <div class="stay">
+        <div class="w">
+          <div>
+            <h2>Stay Connected!</h2>
+            <p>
+              Follow @EconOppLA on Twitter, Facebook, and Instagram and
+              <a class="u" href="#">subscribe to our newsletter</a> to be the
+              first to know about our upcoming programs and opportunities.
+            </p>
+          </div>
+          <div class="soc">
+            <a href="#" aria-label="Twitter">X</a
+            ><a href="#" aria-label="Facebook">f</a
+            ><a href="#" aria-label="Instagram">ig</a
+            ><a href="#" aria-label="Email">@</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="w">
+        <div>
+          <a class="logo" href="#top"
+            ><b>DEO</b
+            ><small
+              >Department of<br />Economic Opportunity<br />County of Los
+              Angeles</small
+            ></a
+          ><br />
+          <p>
+            <b>Address:</b><br />510 S. Vermont Avenue<br />Los Angeles, CA
+            90020
+          </p>
+          <p><b>Phone:</b><br />844.777.2059</p>
+          <p><b>Email:</b><br />deo@opportunity.lacounty.gov</p>
+        </div>
+        <div>
+          <h4>Do You Need Help?</h4>
+          <a href="#">211 LA County</a><a href="#">Public Alerts</a
+          ><a href="#">Letter of Support</a><a href="#">Subscribe</a
+          ><a href="#">Accessibility</a><a href="#">County Resources</a>
+        </div>
+        <div>
+          <h4>Know your rights</h4>
+          <p>
+            Workforce Innovation &amp; Opportunity ACT (WIOA) Grievance and
+            Complaints:<br />213-418-7120<br />compliance@opportunity.lacounty.gov
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const I =
+        '<svg class="ch" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      const D = {
+        Careers: [
+          ["America's Job Centers of California", "jobc"],
+          ["Youth@Work Program", "youth"],
+          ["High Road Training Partnerships", "highroad"],
+          ["Workforce Development Board", "wdb"],
+        ],
+        Businesses: [
+          ["Office of Small Business", "osb"],
+          ["Sidewalk Vending Program", "sidewalk"],
+          ["Small Business Commission", "smallbiz"],
+          ["Life Sciences Industry", "lifesci"],
+          ["Arts, Media, and Entertainment", "arts"],
+          ["Malibu-Topanga Business Interruption Fund", "malibu"],
+        ],
+        Communities: [
+          ["Capital Development", "capdev"],
+          ["RENOVATE Facade Improvement Program", "renovate"],
+        ],
+      };
+      const N = { Careers: 4, Businesses: 3, Communities: 2 };
+      const IN = [
+        [
+          "Pandemic Recovery",
+          "DEO deployed more than $156 million in economic and workforce development funding through the American Rescue Plan Act to help those impacted by COVID-19.",
+          "pandemic",
+        ],
+        [
+          "Fire Recovery",
+          "DEO leads economic resiliency and recovery efforts for Los Angeles County, by providing information, services, and resources for workers and businesses.",
+          "fire",
+        ],
+        [
+          "Immigration",
+          "Los Angeles County is supporting workers and small businesses impacted by immigration enforcement with available resources and services.",
+          "immig",
+        ],
+      ];
+      const NW = [
+        [
+          "LA County DEO Opens Request for Proposals for Film and Television Permit Coordination Services",
+          "August 18, 2025",
+          "film",
+          ["Press release", "Learn more"],
+        ],
+        [
+          "LA County DEO Announces Opening of New Job Center Providing No-Cost Career Services to the San Gabriel Valley",
+          "August 14, 2025",
+          "sg",
+          ["Press release", "Learn more"],
+        ],
+        [
+          "Reseda Businesses Revitalized Through LA County's RENOVATE Facade Improvement Program",
+          "July 31, 2025",
+          "renovate",
+          ["Press release"],
+        ],
+        [
+          "Solis Advances Iconic General Hospital Redevelopment into a Healthy Village",
+          "July 29, 2025",
+          "solis",
+          ["Press release", "Learn more"],
+        ],
+        [
+          "LA County Launches Malibu-Topanga Business Interruption Fund",
+          "July 23, 2025",
+          "malibu",
+          ["Press release", "Learn more"],
+        ],
+      ];
+      const $ = (s) => document.querySelector(s);
+      $("#nav").innerHTML =
+        Object.keys(D)
+          .map(
+            (k) =>
+              `<div class="dd"><button>${k}${I}</button><ul>${D[k].map((x) => `<li><a href="#help" data-k="${k}">${x[0]}</a></li>`).join("")}</ul></div>`,
+          )
+          .join("") +
+        '<a href="#initiatives">Key Initiatives</a><a href="#news">News</a><a href="#">About DEO</a>';
+      $("#paths").innerHTML = Object.keys(D)
+        .map((k) => `<a href="#help" data-k="${k}">${k}${I}</a>`)
+        .join("");
+      $("#tabs").innerHTML = Object.keys(D)
+        .map((k) => `<button role="tab" data-k="${k}">${k}</button>`)
+        .join("");
+      function show(k) {
+        $("#panel").style.setProperty("--n", N[k]);
+        document
+          .querySelectorAll("#tabs button")
+          .forEach((b) => b.setAttribute("aria-selected", b.dataset.k === k));
+        $("#panel").innerHTML = D[k]
+          .map(
+            (x) =>
+              `<a class="card" href="#"><div class="ph p-${x[1]}"></div><h3>${x[0]}${I}</h3></a>`,
+          )
+          .join("");
+      }
+      $("#init").innerHTML = IN.map(
+        (x) =>
+          `<div class="card"><div class="ph p-${x[2]}"></div><h3>${x[0]}</h3><p>${x[1]}</p><a class="btn" href="#">Learn More About ${x[0]}</a></div>`,
+      ).join("");
+      $("#list").innerHTML = NW.map(
+        (x) =>
+          `<article class="item"><div class="ph p-${x[2]}"></div><div><time>${x[1]}</time><h3>${x[0]}</h3><div class="chips">${x[3].map((c) => `<a href="#">${c}</a>`).join("")}</div></div></article>`,
+      ).join("");
+      document.addEventListener("click", (e) => {
+        const a = e.target.closest("[data-k]");
+        if (a) show(a.dataset.k);
+        document.querySelector(".bar").classList.remove("open");
+      });
+      $("#mb").onclick = () => {
+        const b = document.querySelector(".bar");
+        b.classList.toggle("open");
+        $("#mb").setAttribute("aria-expanded", b.classList.contains("open"));
+      };
+      show("Careers");
+    </script>
+  </body>
+</html>
